@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English to Hindi Transliteration</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>English to Hindi Transliteration</h1>
+    <form method="post">
+        <label for="input_text">Enter English Text:</label><br>
+        <textarea name="input_text" rows="4" cols="50" placeholder="Enter English text..."></textarea><br>
+        <input type="submit" value="Transliterate">
+    </form>
+    {% if output_text %}
+        <div class="output">
+            <h2>Transliterated Hindi Text:</h2>
+            <p>{{ output_text }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
